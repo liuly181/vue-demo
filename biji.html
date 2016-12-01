@@ -1,0 +1,12 @@
+思路：
+1、v-if="goods.length" 如果商品里有数据就渲染第一个模板，否则就执行v-else里面的东西
+
+2、把数据渲染到页面上  渲染图片  :src="item.goosImg"
+
+3、用过滤器  | 管道符  {{item.goodsPrice | currency "￥"}}
+
+4、计算 computed  总价=总价+单价*数量
+
+5、点击事件  +  —  做数量上的加减
+
+6、删除 ：数组.splice($index,1)
